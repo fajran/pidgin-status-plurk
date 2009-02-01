@@ -18,6 +18,9 @@ obj = bus.get_object("im.pidgin.purple.PurpleService", "/im/pidgin/purple/Purple
 purple = dbus.Interface(obj, "im.pidgin.purple.PurpleInterface")
 
 def send_plurk(msg):
+	if len(msg.strip()) == 0:
+		return
+
 	p = plurkapi.PlurkAPI()
 	p.login(plurkdata.username, plurkdata.password)
 	p.addPlurk(qualifier=':', content=msg)
