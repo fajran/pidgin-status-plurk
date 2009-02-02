@@ -1,8 +1,8 @@
 Description
 ===========
 
-This little script will listen your (saved) status in Pidgin. Once it detects a
-changes, it will take the new status and send it to your Plurk account.
+This little script will listen to your (saved) status in Pidgin. Once it detects a
+change, it will take the new status and send it to your Plurk account.
 
 Requirements
 ============
